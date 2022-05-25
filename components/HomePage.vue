@@ -8,9 +8,13 @@
     </v-card>
 
     <AboutContainer />
+    <ProjectContainer />
+    <ContactContainer />
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import ContactContainer from "./ContactContainer.vue";
+</script>
 
 <style></style>
