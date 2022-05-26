@@ -2,26 +2,41 @@
   <v-card class="mt-3 pb-5">
     <v-card-title>Contact Me</v-card-title>
     <div class="text-center">
-      <v-chip large class="mx-5" color="primary" text-color="white">
+      <v-btn
+        href="https://www.linkedin.com/in/michaelcorrieri/"
+        large
+        color="primary"
+        text-color="white"
+      >
         <v-avatar left>
           <v-icon>mdi-account-circle</v-icon>
         </v-avatar>
         LinkedIn
-      </v-chip>
+      </v-btn>
 
-      <v-chip large class="mx-5" color="red" text-color="white">
+      <v-btn
+        href="mailto:mlcorrieri@gmail.com"
+        large
+        color="red"
+        text-color="white"
+      >
         <v-avatar left>
           <v-icon>mdi-email-fast-outline</v-icon>
         </v-avatar>
         Email
-      </v-chip>
+      </v-btn>
 
-      <v-chip large class="mx-5" color="orange" text-color="white">
+      <v-btn
+        href="https://github.com/mcorrieri"
+        large
+        color="orange"
+        text-color="white"
+      >
         <v-avatar left>
           <v-icon>mdi-github</v-icon>
         </v-avatar>
         GitHub
-      </v-chip>
+      </v-btn>
     </div>
   </v-card>
 </template>
