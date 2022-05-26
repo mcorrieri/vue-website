@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card class="my-3">
     <v-card-title>About</v-card-title>
     <v-card-text
       >Wie Gehts! My name is Michael Corrieri and I'm a Software Engineer based
