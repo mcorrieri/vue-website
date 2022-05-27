@@ -3,7 +3,9 @@
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn large flat outlined color="orange"> Resume </v-btn>
+      <v-btn large flat outlined color="orange" href="Dev-Resume.pdf">
+        Resume
+      </v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
