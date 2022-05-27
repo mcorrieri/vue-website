@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mt-3 pb-5">
+  <v-card class="mt-3 pb-5" outlined>
     <v-card-title>Contact Me</v-card-title>
     <div class="text-center">
       <v-btn

@@ -1,5 +1,5 @@
 <template>
-  <v-card class="my-3">
+  <v-card class="mt-3 pb-6">
     <v-card-title>About</v-card-title>
     <v-card-text class="font-weight-medium text-h6"
       >Wie Gehts! My name is Michael Corrieri and I'm a Software Developer based

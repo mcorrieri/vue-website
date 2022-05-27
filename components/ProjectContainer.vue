@@ -17,7 +17,30 @@
       <v-carousel-item v-for="(slide, i) in slides" :key="i">
         <v-sheet :color="colors[i]" height="100%">
           <v-row class="fill-height" align="center" justify="center">
-            <div class="text-h2">{{ slide }} Slide</div>
+            <div class="text-h2">
+              <v-row dense>
+                <v-col sm="12" md="12" lg="6">
+                  <v-card height="250" width="300">
+                    <v-card-title>{{ slide.name }}</v-card-title>
+                    <v-card-text class="text-center">
+                      <v-icon>{{ slide.iconA }}</v-icon>
+                      <v-icon>{{ slide.iconB }}</v-icon
+                      ><v-icon>{{ slide.iconC }}</v-icon
+                      ><v-icon>{{ slide.iconD }}</v-icon>
+                      <v-icon>{{ slide.iconE }}</v-icon>
+                      <v-card-text>{{ slide.info }} </v-card-text>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col sm="12" md="12" lg="6">
+                  <v-img
+                    class="justify-center d-flex align-center"
+                    :src="require(`@/assets/img/${slide.image}`)"
+                    width="500"
+                  />
+                </v-col>
+              </v-row>
+            </div>
           </v-row>
         </v-sheet>
       </v-carousel-item>
@@ -29,19 +52,50 @@
 export default {
   data() {
     return {
-      colors: [
-        "indigo",
-        "warning",
-        "pink darken-2",
-        "red lighten-1",
-        "deep-purple accent-4",
-      ],
+      colors: ["indigo", "warning", "pink darken-2", "deep-purple accent-4"],
       slides: [
-        "Fishy",
-        "Covid-19 Vaccine Map",
-        "Emoji Tic Tac Toe",
-        "Big Apple Vacations",
-        "Fifth",
+        {
+          id: 1,
+          name: "Fishy",
+          image: "fishy.png",
+          info: "Craigslist-based app that allows users to sell and buy fish while adding them to their virtual aquarium",
+          iconA: "mdi-react",
+          iconB: "mdi-language-javascript",
+          iconC: "mdi-language-ruby-on-rails",
+          iconD: "mdi-language-ruby",
+          iconE: "",
+          demo: "https://youtu.be/iyt62efBkOM",
+        },
+        {
+          id: 2,
+          name: "Covid-19 Vaccine Map",
+          image: "vaccine.png",
+          info: "Public health app which graphically represents vaccination rates in the US using Chart.js",
+          iconA: "mdi-react",
+          iconB: "mdi-language-javascript",
+          iconC: "mdi-language-ruby",
+          demo: "",
+        },
+        {
+          id: 3,
+          name: "Emoji Tic Tac Toe",
+          image: "emojipic.png",
+          info: "A fun and new way to play Tic Tac Toe! Allows players to choose from a dropdown of emojis instead of using those antiquated Xs and Os",
+          iconA: "mdi-react",
+          iconB: "mdi-language-javascript",
+          demo: "",
+        },
+        {
+          id: 4,
+          name: "Big Apple Vacations",
+          image: "vacation2.png",
+          info: "Renters can book appointments using a calendar and can view or cancel any appointment on their appointments page",
+          iconA: "mdi-react",
+          iconB: "mdi-language-javascript",
+          iconC: "mdi-language-ruby-on-rails",
+          iconD: "mdi-language-ruby",
+          demo: "",
+        },
       ],
     };
   },

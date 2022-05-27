@@ -16,7 +16,7 @@
     <v-row dense justify="center" class="d-flex align-center my-4">
       <v-col sm="12" md="12" lg="6">
         <v-img
-          class="justify-center"
+          class="justify-center pa-3 rounded"
           src="aqua.jpg"
           max-height="600"
           max-width="600"
@@ -24,7 +24,7 @@
       </v-col>
       <v-col sm="12" md="12" lg="6">
         <v-img
-          class="justify-center"
+          class="justify-center pa-3 rounded"
           src="baby-angel.jpg"
           max-height="600"
           max-width="600"
