@@ -18,9 +18,9 @@
         <v-sheet :color="colors[i]" height="100%">
           <v-row class="fill-height" align="center" justify="center">
             <div class="text-h2">
-              <v-row dense>
-                <v-col sm="12" md="12" lg="6">
-                  <v-card height="250" width="300">
+              <v-row dense align="center" justify="center">
+                <v-col sm="6" md="6" lg="6">
+                  <v-card max-width="350">
                     <v-card-title>{{ slide.name }}</v-card-title>
                     <v-card-text class="text-center">
                       <v-icon>{{ slide.iconA }}</v-icon>
@@ -32,11 +32,11 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col sm="12" md="12" lg="6">
+                <v-col sm="6" md="6" lg="6">
                   <v-img
-                    class="justify-center d-flex align-center"
+                    class="rounded"
                     :src="require(`@/assets/img/${slide.image}`)"
-                    width="500"
+                    max-width="500"
                   />
                 </v-col>
               </v-row>
@@ -80,7 +80,7 @@ export default {
           id: 3,
           name: "Emoji Tic Tac Toe",
           image: "emojipic.png",
-          info: "A fun and new way to play Tic Tac Toe! Allows players to choose from a dropdown of emojis instead of using those antiquated Xs and Os",
+          info: "Allows players to choose from a dropdown of emojis instead of using those antiquated Xs and Os",
           iconA: "mdi-react",
           iconB: "mdi-language-javascript",
           demo: "",

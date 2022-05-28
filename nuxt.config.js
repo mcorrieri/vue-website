@@ -9,8 +9,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - mike-vue",
-    title: "mike-vue",
+    titleTemplate: "%s",
+    title: "Michael Corrieri",
     htmlAttrs: {
       lang: "en",
     },

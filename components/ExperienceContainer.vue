@@ -5,7 +5,7 @@
       >ASR Analytics - Developer I</v-card-subtitle
     >
     <v-card-text class="text-subtitle-1"> April 2022 - Present</v-card-text>
-    <v-card-text class="text-center text-h5"
+    <v-card-text class="text-center text-h5 mb-3"
       >Tools:
       <v-icon large>mdi-vuejs</v-icon>
       <v-icon large>mdi-vuetify</v-icon>
@@ -21,7 +21,7 @@
       November 2021 - April 2022</v-card-text
     >
 
-    <v-card-text class="text-center text-h5"
+    <v-card-text class="text-center text-h5 mb-3"
       >Tools:
       <v-icon large>mdi-language-javascript</v-icon>
       <v-icon large>mdi-react</v-icon>
