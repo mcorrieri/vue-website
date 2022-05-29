@@ -21,12 +21,12 @@
       November 2021 - April 2022</v-card-text
     >
 
-    <v-card-text class="text-center text-h5 mb-3"
+    <!-- <v-card-text class="text-center text-h5 mb-3"
       >Tools:
       <v-icon large color="yellow">mdi-language-javascript</v-icon>
       <v-icon large color="#90CAF9">mdi-react</v-icon>
       <v-icon large>mdi-github</v-icon>
-    </v-card-text>
+    </v-card-text> -->
   </v-card>
 </template>
 

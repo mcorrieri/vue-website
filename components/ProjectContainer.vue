@@ -23,12 +23,18 @@
                   <v-card max-width="350">
                     <v-card-title>{{ slide.name }}</v-card-title>
                     <v-card-text class="text-center">
-                      <v-icon>{{ slide.iconA }}</v-icon>
-                      <v-icon>{{ slide.iconB }}</v-icon
-                      ><v-icon>{{ slide.iconC }}</v-icon
-                      ><v-icon>{{ slide.iconD }}</v-icon>
-                      <v-icon>{{ slide.iconE }}</v-icon>
+                      <v-icon large>{{ slide.iconA }}</v-icon>
+                      <v-icon large>{{ slide.iconB }}</v-icon
+                      ><v-icon large>{{ slide.iconC }}</v-icon
+                      ><v-icon large>{{ slide.iconD }}</v-icon>
+                      <v-icon large>{{ slide.iconE }}</v-icon>
                       <v-card-text>{{ slide.info }} </v-card-text>
+                      <v-btn v-if="slide.id !== 3" :href="slide.demoLink">
+                        <v-icon>{{ slide.youtubeIcon }}</v-icon>
+                      </v-btn>
+                      <v-btn :href="slide.githubLink">
+                        <v-icon class="mx-2">{{ slide.githubIcon }}</v-icon>
+                      </v-btn>
                     </v-card-text>
                   </v-card>
                 </v-col>
@@ -63,8 +69,10 @@ export default {
           iconB: "mdi-language-javascript",
           iconC: "mdi-language-ruby-on-rails",
           iconD: "mdi-language-ruby",
-          iconE: "",
-          demo: "https://youtu.be/iyt62efBkOM",
+          githubIcon: "mdi-github",
+          githubLink: "https://github.com/mcorrieri/frontend-fishy",
+          youtubeIcon: "mdi-youtube",
+          demoLink: "https://youtu.be/iyt62efBkOM",
         },
         {
           id: 2,
@@ -74,7 +82,10 @@ export default {
           iconA: "mdi-react",
           iconB: "mdi-language-javascript",
           iconC: "mdi-language-ruby",
-          demo: "",
+          githubIcon: "mdi-github",
+          githubLink: "https://github.com/mcorrieri/Phase3-Frontend",
+          youtubeIcon: "mdi-youtube",
+          demoLink: "https://youtu.be/mXBkc_2mg1s",
         },
         {
           id: 3,
@@ -83,7 +94,10 @@ export default {
           info: "Allows players to choose from a dropdown of emojis instead of using those antiquated Xs and Os",
           iconA: "mdi-react",
           iconB: "mdi-language-javascript",
-          demo: "",
+          githubIcon: "mdi-github",
+          githubLink: "https://github.com/mcorrieri/emoji-tic-tac-toe",
+          youtubeIcon: null,
+          demoLink: null,
         },
         {
           id: 4,
@@ -94,7 +108,10 @@ export default {
           iconB: "mdi-language-javascript",
           iconC: "mdi-language-ruby-on-rails",
           iconD: "mdi-language-ruby",
-          demo: "",
+          githubIcon: "mdi-github",
+          githubLink: "https://github.com/pjhg14/phase4-pair-project-frontend",
+          youtubeIcon: "mdi-youtube",
+          demoLink: "https://youtu.be/lTvMRwlDYf0",
         },
       ],
     };
