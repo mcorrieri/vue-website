@@ -19,7 +19,7 @@
           <v-row class="fill-height" align="center" justify="center">
             <div class="text-h2">
               <v-row dense align="center" justify="center">
-                <v-col sm="6" md="6" lg="6">
+                <v-col xs="6" sm="6" md="6" lg="6">
                   <v-card max-width="350">
                     <v-card-title>{{ slide.name }}</v-card-title>
                     <v-card-text class="text-center">
@@ -29,10 +29,14 @@
                       ><v-icon large>{{ slide.iconD }}</v-icon>
                       <v-icon large>{{ slide.iconE }}</v-icon>
                       <v-card-text>{{ slide.info }} </v-card-text>
-                      <v-btn v-if="slide.id !== 3" :href="slide.demoLink">
+                      <v-btn
+                        outlined
+                        v-if="slide.id !== 3"
+                        :href="slide.demoLink"
+                      >
                         <v-icon>{{ slide.youtubeIcon }}</v-icon>
                       </v-btn>
-                      <v-btn :href="slide.githubLink">
+                      <v-btn outlined :href="slide.githubLink">
                         <v-icon class="mx-2">{{ slide.githubIcon }}</v-icon>
                       </v-btn>
                     </v-card-text>
