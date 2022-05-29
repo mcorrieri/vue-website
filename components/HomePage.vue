@@ -12,6 +12,7 @@
       </v-col>
     </v-row>
     <ExperienceContainer />
+    <ToolsContainer />
     <ProjectContainer />
     <v-row dense justify="center" class="d-flex align-center my-4">
       <v-col sm="12" md="12" lg="6">
@@ -39,6 +40,7 @@
 import ContactContainer from "./ContactContainer.vue";
 import ExperienceContainer from "./ExperienceContainer.vue";
 import TitleContainer from "./TitleContainer.vue";
+import ToolsContainer from "./ToolsContainer.vue";
 </script>
 
 <style></style>
