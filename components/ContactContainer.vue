@@ -1,7 +1,13 @@
 <template>
   <v-card class="mt-3 pb-5" outlined>
     <v-card-title>Contact Me</v-card-title>
-    <div class="text-center">
+    <div
+      class="text-center"
+      :class="{
+        'text-h2': $vuetify.breakpoint.smAndDown,
+        'text-center mb-2': $vuetify.breakpoint.mdAndUp,
+      }"
+    >
       <v-btn
         href="https://www.linkedin.com/in/michaelcorrieri/"
         large
