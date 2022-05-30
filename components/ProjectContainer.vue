@@ -2,6 +2,7 @@
   <v-card class="my-3">
     <v-card-title>Projects</v-card-title>
     <v-carousel
+      v-if="$vuetify.breakpoint.mdAndUp"
       cycle
       height="400"
       hide-delimiter-background
@@ -20,7 +21,7 @@
             <div class="text-h2">
               <v-row dense align="center" justify="center">
                 <v-col xs="6" sm="6" md="6" lg="6">
-                  <v-card max-width="350">
+                  <v-card max-width="375">
                     <v-card-title>{{ slide.name }}</v-card-title>
                     <v-card-text class="text-center">
                       <v-icon large>{{ slide.iconA }}</v-icon>
@@ -44,6 +45,7 @@
                 </v-col>
                 <v-col sm="6" md="6" lg="6">
                   <v-img
+                    contain
                     class="rounded"
                     :src="require(`@/assets/img/${slide.image}`)"
                     max-width="500"
@@ -55,6 +57,45 @@
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
+    <v-container v-else>
+      <v-card>
+        <v-row dense>
+          <v-col v-for="slide in slides" :key="slide.id" :cols="slide.flex">
+            <v-row dense align="center" justify="center">
+              <v-col xs="6" sm="6" md="6" lg="6">
+                <v-card max-width="375" outlined class="mb-2">
+                  <v-card-title>{{ slide.name }}</v-card-title>
+                  <v-card-text class="text-center">
+                    <v-icon large>{{ slide.iconA }}</v-icon>
+                    <v-icon large>{{ slide.iconB }}</v-icon
+                    ><v-icon large>{{ slide.iconC }}</v-icon
+                    ><v-icon large>{{ slide.iconD }}</v-icon>
+                    <v-icon large>{{ slide.iconE }}</v-icon>
+                    <v-card-text>{{ slide.info }} </v-card-text>
+                    <v-img
+                      contain
+                      class="rounded mb-5"
+                      :src="require(`@/assets/img/${slide.image}`)"
+                      max-width="500"
+                    />
+                    <v-btn
+                      outlined
+                      v-if="slide.id !== 3"
+                      :href="slide.demoLink"
+                    >
+                      <v-icon>{{ slide.youtubeIcon }}</v-icon>
+                    </v-btn>
+                    <v-btn outlined :href="slide.githubLink">
+                      <v-icon class="mx-2">{{ slide.githubIcon }}</v-icon>
+                    </v-btn>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-container>
   </v-card>
 </template>
 
